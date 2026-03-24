@@ -15,7 +15,7 @@ end
 
   private
 
-  def job_params
-    params.permit(:title, :category, :salary)
-  end
+def job_params
+  params.require(:job).permit(:title, :category, :salary)
+end
 end
